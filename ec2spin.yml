@@ -1,4 +1,10 @@
+# Prerequisite:
+# 1. Install Ansible- Master
 
+# 2. boto3  (Python   boto library )
+# 3  An IAM Role with Policy AmazonEC2FullAccess and attach it to the Ansible master instance.
+
+vi ec2spin.yml
 ---
 - name: " Deploy Ec2 with HTTPD"
   hosts: localhost
